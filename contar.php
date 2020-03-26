@@ -15,7 +15,7 @@ include "formulariocontar.php";
         if($length > 1)
             $count++;
     }
-    $result= '<div><label>'.$count.'</label> </div>';                                       
+    $result= '<div class="result4"><label>'.$count.'</label> </div>';                                       
     echo $result;
 ?>
 

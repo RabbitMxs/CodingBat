@@ -46,8 +46,8 @@
             <div class="col-md-10" style="padding: 0% 0% 0% 0%;">
                 <?php
                     session_start();
-                    $_SESSION['doc']=$document;
                     if(isset($_GET['action'])){
+                        $_SESSION['doc']=$document;
                         $datos="";
                         $datos.='<div class="jumbotron" style=" margin: 0% 0% 0% 0%;height: 100%;">
                                 <h1 class="display-3">'.$document['nombre'].'</h1>
@@ -58,49 +58,34 @@
                                     case 1:
                                         $datos.='<p class="lead-2">
                                                     <a class="btn btn-primary btn-lg" href="formularioardillas.php" role="button">Try</a>
-                                                </p>
-                                                <p class="lead-2">
-                                                    <a class="btn btn-primary btn-lg" href="jsArdilla.php" role="button">Code</a>
-                                                </p>
-                                            </div></div>';
+                                                </p>';
                                     break;
                                     case 2:
                                         $datos.='<p class="lead-2">
                                                     <a class="btn btn-primary btn-lg" href="formulariodiferencia.php" role="button">Try</a>
-                                                </p>
-                                                <p class="lead-2">
-                                                    <a class="btn btn-primary btn-lg" href="#" role="button">Code</a>
-                                                </p>
-                                            </div></div>';
+                                                </p>';
                                     break;
                                     case 3:
                                         $datos.='<p class="lead-2">
                                                     <a class="btn btn-primary btn-lg" href="formulariocadena.php" role="button">Try</a>
-                                                </p>
-                                                <p class="lead-2">
-                                                    <a class="btn btn-primary btn-lg" href="#" role="button">Code</a>
-                                                </p>
-                                            </div></div>';
+                                                </p>';
                                     break;
                                     case 4:
                                         $datos.='<p class="lead-2">
-                                                    <a class="btn btn-primary btn-lg" href="formulariocontar.php" role="button">Try</a>
-                                                </p>
-                                                <p class="lead-2">
-                                                    <a class="btn btn-primary btn-lg" href="#" role="button">Code</a>
-                                                </p>
-                                            </div></div>';
+                                                    <a class="btn btn-primary btn-lg" href="formularioswap.php" role="button">Try</a>
+                                                </p>';
                                     break;
                                     case 5:
                                         $datos.='<p class="lead-2">
-                                                    <a class="btn btn-primary btn-lg" href="formularioswap.php" role="button">Try</a>
-                                                </p>
-                                                <p class="lead-2">
-                                                    <a class="btn btn-primary btn-lg" href="#" role="button">Code</a>
-                                                </p>
-                                            </div></div>';
+                                                    <a class="btn btn-primary btn-lg" href="formulariocontar.php" role="button">Try</a>
+                                                </p>';
                                     break;
                             }
+                            $datos.='<p class="lead-2">
+                                        <a class="btn btn-primary btn-lg" href="jsDocument.php" role="button">Code</a>
+                                    </p>
+                                </div>
+                            </div>';
                         echo $datos;
                     }
                 ?>

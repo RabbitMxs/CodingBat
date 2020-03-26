@@ -3,7 +3,7 @@ include "cambiar.php";
 ?>
         <fieldset>
             <form method="POST" action="ardillas.php">
-                <div class="container-fluid" style="margin-top: 5%;">
+                <div class="container-fluid" style="margin-top: 3%;">
                     <div class="row" style="padding: 0% 5% 0% 5%">
                         <div class="col-md-5">
                             <label for="exampleInputEmail1">Temperatura</label>
@@ -40,7 +40,6 @@ include "cambiar.php";
                 <?php
                 include "classTable.php";
                     $table->showSquirrel();
-
                 ?>
             </thead>
         </table>

@@ -32,6 +32,11 @@ for ($i = 0; $i < count($strings); $i++) {
     $map[$c] = $i;
   }
 }
-    //$result2 = '<div><label>'.$result.'</label> </div>'; 
-  var_dump($result);
+    $result2="";
+    for ($i=0; $i < count( $result) ; $i++) { 
+        $result2 .= $result[$i];
+        $result2.=", ";
+    }
+    //$result2 = '<div><label>'.$result.'</label> </div>';
+    echo'<div class="result5"><label>'.$result2.'</label> </div>';
 ?>

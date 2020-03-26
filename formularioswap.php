@@ -1,5 +1,5 @@
 <?php
-include "inicio.php";
+include "cambiar.php";
 ?>
 
     <fieldset>
@@ -10,7 +10,9 @@ include "inicio.php";
                         <label for="exampleInputEmail1">Ingrese la cadena</label>
                         <input type="text" name="cadena" class="form-control" id="cadena" placeholder="Ejemplo aa,ss,asd,ssa">
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-2">
+                    </div>
+                    <div class="col-md-2">
                         <div>
                             <button type="submit" class="btn btn-primary">Comprobar</button>
                         </div>
@@ -18,8 +20,18 @@ include "inicio.php";
                 </div>
             </div>
         </form>
-
     </fieldset>
-    
-    </body>
-</html>
+    <table class="table table-hover" style="width: 75%; margin:2%">
+        <thead>
+            <tr class="table-primary" style="text-align: center;">
+                <th scope="row">Datos de entrada</th>
+                <th>Datos de salida</th>
+            </tr>
+            <?php
+            include "classTable.php";
+                $table->showSwap();
+            ?>
+        </thead>
+    </table>
+  </body>
+</html>	

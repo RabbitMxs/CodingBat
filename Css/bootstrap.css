@@ -11097,3 +11097,34 @@ a.text-dark:hover, a.text-dark:focus {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
+
+
+.result1{
+  position: relative;
+  left: 1150px;
+  bottom: 810px;
+}
+
+.result2 {
+  position: relative;
+  left: 1470px;
+  bottom: 835px;
+}
+
+.result3 {
+  position: relative;
+  left: 1470px;
+  bottom: 690px;
+}
+
+.result4 {
+  position: relative;
+  left: 1370px;
+  bottom: 500px;
+}
+
+.result5 {
+  position: relative;
+  left: 1500px;
+  bottom: 360px;
+}
