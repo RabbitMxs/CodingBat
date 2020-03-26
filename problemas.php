@@ -40,7 +40,7 @@
                         echo '<a class="btn btn-primary size-btn" href="?E='.$_GET['E'].'&action='.$_GET['E'].'">'.$document['nombre'].'</a >';
                     }
                 ?>
-                <!--<a class="btn btn-primary size-btn" href="" >Home</a >-->
+                <a class="btn btn-primary size-btn" href="index.html" >Home</a >
             </div>
             <!--Datos del problema-->
             <div class="col-md-10" style="padding: 0% 0% 0% 0%;">
