@@ -3693,7 +3693,7 @@ input[type="button"].btn-block {
   position: relative;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
-  display: flow-root;
+  display: inline-flex;
   vertical-align: middle;
 }
 

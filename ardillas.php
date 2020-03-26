@@ -12,13 +12,13 @@ $temp=$_POST['temp'];
         if ($temp>=60 && $temp<=100){
             $juegan="true";
             //echo $juegan;
-            $result.='<div class="result1"><label>'.$juegan.'</label> </div>';
+            $result.='<div class="result1" style="color:green;"><label>'.$juegan.'</label> </div>';
             echo $result;
 
         }else{
             $juegan="false";
             //echo $juegan;
-            $result.='<div class="result1"><label>'.$juegan.'</label> </div>';
+            $result.='<div class="result1" style="color:red;"><label>'.$juegan.'</label> </div>';
             echo $result;
 
         }
@@ -28,12 +28,12 @@ $temp=$_POST['temp'];
         if ($temp>=60 && $temp<=90){
             $juegan="true";
             //echo $juegan;
-            $result.='<div class="result1"><label>'.$juegan.'</label> </div>';
+            $result.='<div class="result1" style="color:green;"><label>'.$juegan.'</label> </div>';
             echo $result;
         }else{
             $juegan="false";
             //echo $juegan;
-            $result.='<div class="result1"><label>'.$juegan.'</label> </div>';
+            $result.='<div class="result1" style="color:red;"><label>'.$juegan.'</label> </div>';
             echo $result;
 
         }  

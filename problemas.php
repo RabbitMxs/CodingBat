@@ -11,7 +11,7 @@
     <div class="container-fluid size">
         <div class="row size">
             <!--Lista de  problemas-->
-            <div class="col-md-2 btn-group-vertical2 list">
+            <div class="col-md-2 btn-group-vertical2 list" style="display: flow-root">
                 <?php
                     require 'vendor\autoload.php';
                     $client=new MongoDB\Client;
