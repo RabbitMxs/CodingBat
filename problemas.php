@@ -12,9 +12,6 @@
         <div class="row size">
             <!--Lista de  problemas-->
             <div class="col-md-2 btn-group-vertical2 list">
-                <!--<h3 class="display-5" style="color:#fff;"> Categoria</h3>-->
-                <!--<img src="images\Logo.png" alt="logo" style="width: 90%; margin: 0% 5% 5% 5%;"/>-->
-                <!--<button type="button" class="btn btn-primary size-btn" >Button</button>-->
                 <?php
                     require 'vendor\autoload.php';
                     $client=new MongoDB\Client;
@@ -40,33 +37,71 @@
                             break;
                         }
                         echo '<h3 class="display-5" style="color:#fff;">'.$document['category'].'</h3>';
-                        echo '<a class="btn btn-primary size-btn" href="?E=5&action=5">'.$document['nombre'].'</a >';
+                        echo '<a class="btn btn-primary size-btn" href="?E='.$_GET['E'].'&action='.$_GET['E'].'">'.$document['nombre'].'</a >';
                     }
-
-                    /*$client=new MongoDB\Client;
-                    $db=$client->coding;
-                    $result=$db->createCollection('problema');
-                    var_dump($result);*/
                 ?>
-                <a class="btn btn-primary size-btn" href="" >Home</a >
+                <!--<a class="btn btn-primary size-btn" href="" >Home</a >-->
             </div>
             <!--Datos del problema-->
             <div class="col-md-10" style="padding: 0% 0% 0% 0%;">
                 <?php
+                    session_start();
+                    $_SESSION['doc']=$document;
                     if(isset($_GET['action'])){
-                        echo '<div class="jumbotron" style=" margin: 0% 0% 0% 0%;height: 100%;">
+                        $datos="";
+                        $datos.='<div class="jumbotron" style=" margin: 0% 0% 0% 0%;height: 100%;">
                                 <h1 class="display-3">'.$document['nombre'].'</h1>
                                 <p class="lead"></p>'.$document['description'].'</p>
                                 <hr class="my-4">
-                                <div class="btn-group-horizontal">
-                                    <p class="lead-2">
-                                        <a class="btn btn-primary btn-lg" href="#" role="button">Try</a>
-                                    </p>
-                                    <p class="lead-2">
-                                        <a class="btn btn-primary btn-lg" href="#" role="button">Code</a>
-                                    </p>
-                                </div>    
-                            </div>';
+                                <div class="btn-group-horizontal">';
+                                switch($_GET['action']){
+                                    case 1:
+                                        $datos.='<p class="lead-2">
+                                                    <a class="btn btn-primary btn-lg" href="formularioardillas.php" role="button">Try</a>
+                                                </p>
+                                                <p class="lead-2">
+                                                    <a class="btn btn-primary btn-lg" href="jsArdilla.php" role="button">Code</a>
+                                                </p>
+                                            </div></div>';
+                                    break;
+                                    case 2:
+                                        $datos.='<p class="lead-2">
+                                                    <a class="btn btn-primary btn-lg" href="formulariodiferencia.php" role="button">Try</a>
+                                                </p>
+                                                <p class="lead-2">
+                                                    <a class="btn btn-primary btn-lg" href="#" role="button">Code</a>
+                                                </p>
+                                            </div></div>';
+                                    break;
+                                    case 3:
+                                        $datos.='<p class="lead-2">
+                                                    <a class="btn btn-primary btn-lg" href="formulariocadena.php" role="button">Try</a>
+                                                </p>
+                                                <p class="lead-2">
+                                                    <a class="btn btn-primary btn-lg" href="#" role="button">Code</a>
+                                                </p>
+                                            </div></div>';
+                                    break;
+                                    case 4:
+                                        $datos.='<p class="lead-2">
+                                                    <a class="btn btn-primary btn-lg" href="formulariocontar.php" role="button">Try</a>
+                                                </p>
+                                                <p class="lead-2">
+                                                    <a class="btn btn-primary btn-lg" href="#" role="button">Code</a>
+                                                </p>
+                                            </div></div>';
+                                    break;
+                                    case 5:
+                                        $datos.='<p class="lead-2">
+                                                    <a class="btn btn-primary btn-lg" href="formularioswap.php" role="button">Try</a>
+                                                </p>
+                                                <p class="lead-2">
+                                                    <a class="btn btn-primary btn-lg" href="#" role="button">Code</a>
+                                                </p>
+                                            </div></div>';
+                                    break;
+                            }
+                        echo $datos;
                     }
                 ?>
             </div>
