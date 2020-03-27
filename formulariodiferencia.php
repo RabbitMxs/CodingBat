@@ -20,10 +20,9 @@ include "cambiar.php";
                         </div>
                         <div class="col-md-1">
                         </div>
-                        <div class="col-md-1">
+                        <div class="col-md-2">
                         <div  >
                         <button type="submit" class="btn btn-primary">Comprobar</button>
-                        <a class="btn btn-primary btn-lg" href="problemas.php?E=2&action=2" role="button" style="margin: 5px;">Return</a>
                         </div>
                         </div>
                     </div>
@@ -43,5 +42,6 @@ include "cambiar.php";
             ?>
         </thead>
         </table>
+        <a class="btn btn-primary btn-lg return" href="problemas.php?E=2&action=2" role="button" style="margin: 5px;">Return</a>
     </body>
 </html>

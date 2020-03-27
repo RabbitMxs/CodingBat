@@ -7,4 +7,4 @@
         <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
         <title>Problemas</title>
     </head>
-    <body class="size">
+    <body class="size" style="background-color: #ecf0f1;">

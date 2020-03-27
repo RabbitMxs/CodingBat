@@ -13,7 +13,6 @@ include "cambiar.php";
               <div class="col-md-2">
                   <div  >
                       <button type="submit" class="btn btn-primary">Comprobar</button>
-                      <a class="btn btn-primary btn-lg" href="problemas.php?E=3&action=3" role="button" style="margin: 5px;">Return</a>
                   </div>
                 </div>
             </div>
@@ -32,5 +31,6 @@ include "cambiar.php";
             ?>
         </thead>
     </table>
+    <a class="btn btn-primary btn-lg return" href="problemas.php?E=3&action=3" role="button" style="margin: 5px;">Return</a>
   </body>
 </html>		

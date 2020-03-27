@@ -11118,32 +11118,37 @@ a.text-dark:hover, a.text-dark:focus {
 
 .result1{
   position: relative;
-  left: 1150px;
+  left: 1200px;
   bottom: 810px;
+  width: 15%;
 }
 
 .result2 {
   position: relative;
-  left: 1470px;
-  bottom: 835px;
+  left: 1650px;
+  bottom: 855px;
+  width: 15%;
 }
 
 .result3 {
   position: relative;
   left: 1470px;
   bottom: 690px;
+  width: 15%;
 }
 
 .result4 {
   position: relative;
-  left: 1370px;
+  left: 1510px;
   bottom: 500px;
+  width: 15%;
 }
 
 .result5 {
   position: relative;
   left: 1500px;
   bottom: 360px;
+  width: 15%;
 }
 
 .btnCategoria{
@@ -11157,4 +11162,10 @@ a.text-dark:hover, a.text-dark:focus {
   font-size: 1.171875rem;
   font-weight: 300;
   width: 100%;
+}
+
+.return{
+  position: relative;
+  left: 1932px;
+
 }
