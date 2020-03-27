@@ -24,6 +24,7 @@ include "cambiar.php";
                         <div class="col-md-3">
                             <div>
                                 <button type="submit" class="btn btn-primary">Comprobar</button>
+                                <a class="btn btn-primary btn-lg" href="problemas.php?E=1&action=1" role="button" style="margin: 5px;">Return</a>
                             </div>
                             
                         </div>

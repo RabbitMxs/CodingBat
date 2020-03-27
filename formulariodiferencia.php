@@ -23,6 +23,7 @@ include "cambiar.php";
                         <div class="col-md-1">
                         <div  >
                         <button type="submit" class="btn btn-primary">Comprobar</button>
+                        <a class="btn btn-primary btn-lg" href="problemas.php?E=2&action=2" role="button" style="margin: 5px;">Return</a>
                         </div>
                         </div>
                     </div>
