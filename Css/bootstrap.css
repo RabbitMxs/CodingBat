@@ -10964,6 +10964,15 @@ a.text-dark:hover, a.text-dark:focus {
   margin-bottom: 5%;
 }
 
+.display-6 {
+  font-size: 3.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 5%;
+}
+
 .size{
   height: 100%
 }
@@ -11141,6 +11150,7 @@ a.text-dark:hover, a.text-dark:focus {
   width: 25%;
   margin: 1%;
   height: 50%;
+  font-size: 1.5rem;
 }
 
 .lead-3{

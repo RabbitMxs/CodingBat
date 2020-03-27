@@ -10,13 +10,13 @@ $temp=$_POST['temp'];
     if($isSummer){
 
         if ($temp>=60 && $temp<=100){
-            $juegan="true";
+            $juegan="True";
             //echo $juegan;
             $result.='<div class="result1" style="color:green;"><label>'.$juegan.'</label> </div>';
             echo $result;
 
         }else{
-            $juegan="false";
+            $juegan="False";
             //echo $juegan;
             $result.='<div class="result1" style="color:red;"><label>'.$juegan.'</label> </div>';
             echo $result;
@@ -26,12 +26,12 @@ $temp=$_POST['temp'];
     else{
 
         if ($temp>=60 && $temp<=90){
-            $juegan="true";
+            $juegan="True";
             //echo $juegan;
             $result.='<div class="result1" style="color:green;"><label>'.$juegan.'</label> </div>';
             echo $result;
         }else{
-            $juegan="false";
+            $juegan="False";
             //echo $juegan;
             $result.='<div class="result1" style="color:red;"><label>'.$juegan.'</label> </div>';
             echo $result;
