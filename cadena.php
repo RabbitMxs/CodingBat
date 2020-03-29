@@ -20,10 +20,6 @@ $count = 0;
             }
         }   
     }
-    //Para ver si funciona
     $result ='<div class="result3"><label>'.$max.'</label> </div>';
  echo $result;
-
-
-
 ?>

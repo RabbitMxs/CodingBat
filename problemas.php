@@ -82,8 +82,9 @@
                                     break;
                             }
                             $datos.='<p class="lead-2">
-                                        <a class="btn btn-primary btn-lg" href="jsDocument.php" role="button">Code</a>
-                                    </p>
+                                        <a class="btn btn-primary btn-lg" href="jsDocument.php" role="button">JSON</a>
+                                    </p></br>
+                                    <img src="images/'.$_GET['E'].'.png" alt="Codigo" style="margin-left: 6%;"/>
                                 </div>
                             </div>';
                         echo $datos;

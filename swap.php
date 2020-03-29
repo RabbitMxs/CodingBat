@@ -4,11 +4,9 @@ $cadena = $_POST['cadena'];
 $strings=explode (",",$cadena);
 $result=array();
 $map = array();
-$bandera=false;;
-
+$bandera=false;
 for ($i = 0; $i < count($strings); $i++) {
   $c  =  substr($strings[$i],0,1);
-  
   for ($j=0; $j < count($map); $i++) { 
       if(key($map) == $c){
         $bandera = true; break;
@@ -17,8 +15,6 @@ for ($i = 0; $i < count($strings); $i++) {
       }
       next($map);
   }
-  
-  
   if ($bandera)
   {
     $p =  $map[$c];
@@ -37,6 +33,5 @@ for ($i = 0; $i < count($strings); $i++) {
         $result2 .= $result[$i];
         $result2.=", ";
     }
-    //$result2 = '<div><label>'.$result.'</label> </div>';
     echo'<div class="result5"><label>'.$result2.'</label> </div>';
 ?>
